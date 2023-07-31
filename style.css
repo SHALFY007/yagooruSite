@@ -23,7 +23,7 @@
 
 .top_part {
     background-image: url('./img/bg_1.png');
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -84,6 +84,10 @@
     margin-right: 0;
 }
 
+.menu {
+    display: flex;
+}
+
 .main_info {
     max-width: 850px;
     margin-top: 139px;
@@ -100,7 +104,7 @@
     text-transform: uppercase;
 }
 
-.main_header:last-child {
+.main_header:nth-child(2) {
     color: #070707;
     margin-top: -23px;
 }
@@ -183,7 +187,8 @@
 }
 
 .description_part,
-.amenities_part {
+.amenities_part,
+.cases_part {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
@@ -373,4 +378,634 @@
 
 .previos {
     display: flex;
+}
+
+.answears_part {
+    display: flex;
+    flex-direction: column;
+    background: #F9F9F9;
+    padding: 80px 0;
+}
+
+.answears_header {
+    color: #5A54D5;
+    font-family: Oswald;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.answears {
+    margin-top: 50px;
+}
+
+.answear {
+    padding: 20px 28px;
+    border-radius: 20px;
+    border: 3px solid #F9F9F9;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #5A54D5;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.answear:last-child {
+    margin-bottom: 0;
+}
+
+.answear-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answear-txt {
+    color: #070707;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Yanone Kaffeesatz;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.answear-down {
+    overflow: hidden;
+}
+
+.answear-full {
+    margin-top: 26.5px;
+    color: #070707;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Yanone Kaffeesatz light';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.hide {
+    max-height: 0;
+}
+
+.close {
+    display: none;
+}
+
+.features_part {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.features-header {
+    color: #070707;
+    font-family: Oswald;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.features-header span {
+    color: #FF6C00;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feature {
+    max-width: 410px;
+    border-radius: 20px;
+    border: 3px solid #F9F9F9;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #17589E;
+}
+
+.feature-img {
+    margin-bottom: 10px;
+}
+
+.feature span {
+    color: #070707;
+    font-family: 'Yanone Kaffeesatz light';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.prices_part {
+    display: flex;
+    flex-direction: column;
+    background: #17589E;
+    padding: 80px 0;
+}
+
+.callback {
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid #F9F9F9;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #FFF;
+}
+
+.prices_header {
+    color: #000;
+    font-family: Oswald;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121.2%;
+    /* 36.36px */
+    text-transform: uppercase;
+}
+
+.infoes {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.info-title {
+    color: #070707;
+    font-family: 'Yanone Kaffeesatz light';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121.2%;
+    /* 24.24px */
+}
+
+.info-input {
+    width: 390px;
+    display: flex;
+    padding: 16px 0 15px 15px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid rgba(7, 7, 7, 0.20);
+}
+
+.info-btn {
+    padding: 12px 75px;
+    border-radius: 54px;
+    background: #FF6C00;
+    border: none;
+    margin-top: 20px;
+}
+
+.info-btn span {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz light';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.data {
+    display: flex;
+    margin-top: 20px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.data span {
+    color: #070707;
+    font-family: Yanone Kaffeesatz;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121.2%;
+}
+
+.data span span {
+    text-decoration-line: underline;
+}
+
+footer {
+    padding: 70px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-dec {
+    text-decoration: none;
+    color: #929292;
+    font-family: 'Yanone Kaffeesatz light';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-modile {
+    display: none;
+}
+
+.footer-down {
+    min-height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: #000;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.footer-img {
+    margin-right: 16px;
+}
+
+.footer-img:last-child {
+    margin-right: 0px;
+
+}
+
+@media (max-width: 1290px) {
+    .container {
+        width: 688px;
+    }
+
+    .header {
+        min-height: 60px;
+    }
+
+    .navigation {
+        margin-left: 83px;
+        margin-right: 53px;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+
+    .soc_net {
+        font-size: 20px !important;
+        margin-right: 10px;
+    }
+
+    .soc_nets {
+        align-items: center;
+    }
+
+    .soc_net:first-child {
+        width: 135px;
+    }
+
+    .header-img {
+        width: 20px;
+    }
+
+    .main_info {
+        margin-top: 100px;
+    }
+
+    .main_header {
+        font-size: 30px;
+    }
+
+    .main_header:nth-child(2) {
+        margin-top: -10px;
+    }
+
+    .services {
+        max-width: 510px;
+        margin-bottom: 30px;
+    }
+
+    .service {
+        width: 213px;
+        padding : 20px;
+    }
+
+    .service:nth-child(2n) {
+        margin-left: 24px;
+    }
+
+    .service-desc {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .application-btn {
+        margin-bottom: 145px;
+    }
+
+    .description_header {
+        font-size: 30px;
+    }
+
+    .description_desc {
+        font-size: 22px;
+    }
+
+    .description-txt {
+        font-size: 18px;
+    }
+
+    .description_part, .amenities_part, .cases_part {
+        margin-bottom: 80px;
+    }
+
+    .amentities_header {
+        font-size: 30px;
+    }
+
+    .amentities_cards {
+        margin-top: 0;
+    }
+
+    .amentities_card {
+        margin-top: 27px;
+    }
+
+    .amentities_header span {
+        font-size: 30px;
+    }
+
+    .amentities_img {
+        width: 292px;
+    }
+
+    .amentities_txt {
+        font-size: 22px;
+    }
+
+    .swiper {
+        margin-top: 40px;
+    }
+    
+    .slide {
+        width: 332px;
+        height: 570px;
+        flex-direction: column;
+    }
+
+    .case_img {
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .answears_header {
+        font-size: 30px;
+    }
+
+    .answears {
+        margin-top: 30px;
+    }
+
+    .features-header {
+        font-size: 30px;
+    }
+
+    .feature {
+        padding: 10px;
+        max-width: 213px;
+    }
+
+    .feature-img {
+        max-width: 193px;
+    }
+
+    .feature span {
+        font-size: 22px;
+    }
+
+    .prices_part {
+        padding: 60px 0;
+    }
+
+    .infoes {
+        display: block;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .info-input {
+        width: 100%;
+    }
+
+    .link-dec {
+        font-size: 18px;
+    }
+
+    .footer-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 288px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .navigation, .soc_nets {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .main_info {
+        margin-top: 80px;
+    }
+
+    .main_header {
+        font-size: 28px;
+    }
+
+    .main_header:nth-child(2) {
+        margin-top: 0;
+        max-width: 200px;
+    }
+
+    .service:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .services-img {
+        max-width: 24px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .application-btn {
+        margin-bottom: 100px;
+    }
+
+    .description_header {
+        font-size: 28px;
+    }
+
+    .amentities_img {
+        width: 263px;
+    }
+
+    .amentities_card {
+        padding: 20px 10px;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    .amentities_txt {
+        font-size: 18px;
+    }
+
+    .swiper {
+        flex-direction: column;
+    }
+
+    .slide {
+        padding: 15px;
+        width: 288px;
+    }
+
+    .slide:nth-child(2) {
+        display: none;
+    }
+
+    .slide:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .slide-left p {
+        font-size: 18px;
+    }
+
+    .case_img {
+        width: 258px;
+    }
+
+    .previos {
+        display: none;
+    }
+
+    .answears_header {
+        font-size: 28px;
+    }
+
+    .answear-txt {
+        font-size: 22px;
+    }
+
+    .answear-full {
+        font-size: 18px;
+    }
+
+    .features_part {
+        padding: 80px 0;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .feature {
+        max-width: none;
+        margin-bottom: 25px;
+    }
+
+    .feature:last-child {
+        margin-bottom: 0;
+    }
+
+    .feature-img {
+        min-width: 263px;
+    }
+
+    .prices_header {
+        font-size: 22px;
+    }
+
+    .callback {
+        padding: 20px 15px;
+    }
+
+    .info-btn span {
+        font-size: 19px;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-top,
+    .footer-down {
+        display: none;
+    }
+
+    .footer-modile {
+        padding: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chooses {
+        width: 100%;
+        margin-top: 49px;
+        margin-bottom: 50px;
+    }
+
+    .category {
+        margin-bottom: 30px ;
+    }
+
+    .footer-link {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-link:last-child {
+        margin-bottom: 0;
+    }
+
+    .social-networks {
+        margin: 40px 0;
+        justify-content: center;
+    }
 }
